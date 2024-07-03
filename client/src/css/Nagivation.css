@@ -1,0 +1,9 @@
+.Navigation-main-div{
+    height: 10vh;
+    width: 100%;
+    background-color: blueviolet;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

@@ -2,8 +2,26 @@
     height: 10vh;
     width: 100%;
     background-color: blueviolet;
-    justify-content: space-between;
+    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    overflow-x: visible;
+}
+
+.Navigation-sub-left-div{
+padding-left: 10px;
+align-self: flex-start;
+}
+
+.Navigation-sub-right-div{
+padding-left: 10px;
+align-self: flex-end;
+padding-right: 10px;
+}
+
+.Navigation-button{
+    background-color: transparent;
+    border: none;
 }

@@ -8,13 +8,13 @@ const Navigation = () => {
 
     return(
         <div className="Navigation-main-div">
-            <div>
+            <div className="Navigation-sub-left-div">
 
             </div>
-            <div>
-                <button onClick={() => navigate('/')}>home</button>
-                <button onClick={() => navigate('/about')}>about</button>
-                <button onClick={() => navigate('/project')}>project</button>
+            <div className="Navigation-sub-right-div">
+                <button className="Navigation-button" onClick={() => navigate('/')}>home</button>
+                <button className="Navigation-button" onClick={() => navigate('/about')}>about</button>
+                <button className="Navigation-button" onClick={() => navigate('/project')}>project</button>
             </div>
         </div>
     );

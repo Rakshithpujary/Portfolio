@@ -1,5 +1,110 @@
-.ProjectPage-main-div{
-        height: 90vh;
+    .ProjectPage-main-div {
+        min-height: 90vh;
         width: 100%;
         background-color: rgb(255, 127, 127);
-}
+        padding: 20px;
+        box-sizing: border-box;
+        
+    }
+
+    .ProjectPage-top-content-div{
+        padding: 50px;
+    }
+    
+    .To-adjust-sub-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ProjectPage-sub-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+        width: 70%;
+        gap: 20px;
+        place-items: center;
+        overflow-y: visible; /* Allows scrolling if content overflows */
+    }
+    
+    .Project-display-div {
+        background-color: rgb(20, 14, 75);
+        border-radius: 20px;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+        height: 55vh;
+        width: 90%; 
+    }
+    
+    .Project-display-div:hover {
+        transform: scale(1.05);
+    }
+    
+    .Project-img-div {
+        margin-top: 15px;
+        width: 85%;
+        height: 45%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .Project-img-div img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+    }
+    
+    .Project-img-div a {
+        position: absolute;
+        align-self: flex-end;
+        margin-top: 0.3%;
+        margin-right: 0.3%;
+    }
+    
+    .Project-github-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: black;
+        border: none;
+    }
+    
+    .git-icon {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .Project-text-div {
+        color: white;
+        padding: 5px 10px 5px 25px;
+    }
+    
+    .Project-tech-div span {
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 1024px) {
+        .ProjectPage-sub-div {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet screens */
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .ProjectPage-sub-div {
+            grid-template-columns: repeat(1, 1fr); /* 1 column for mobile screens */
+        }
+    }
+    

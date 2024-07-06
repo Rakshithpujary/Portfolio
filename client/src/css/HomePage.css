@@ -4,7 +4,6 @@ html, body {
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
-    overflow: hidden;
 }
 .homePage-main-div{
     height: 90vh;
@@ -15,4 +14,6 @@ html, body {
     background-color: blue;
     height: 100%;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
